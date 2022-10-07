@@ -44,7 +44,7 @@ class RuntimeConfig:
                 dataout = ENVVAR_PATTERN.sub(envrepl, data)
                 self.config = json.loads(dataout)
             """            
-            url = "http://qwc-postgrest-server:3000/rpc/get_config" 
+            url = "http://qwc-postgrest-server:3000/rpc/gn_get_config" 
 
             payload = json.dumps({
                 "inp": "{}Config".format(self.service)

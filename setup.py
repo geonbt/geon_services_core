@@ -3,7 +3,7 @@ import codecs
 import os
 
 
-VERSION = '0.1'
+VERSION = '0.3.2'
 DESCRIPTION = 'A package GEON IT Corp. uses for themselves'
 
 # Setting up
@@ -15,7 +15,6 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     packages=find_packages(),
-    install_requires=['flask_restx', 'collections', 'werkzeug', 'flask_restx', 'flask', 'flask_jwt_extended', 'flask_login', 'sqlalchemy', 'json', 'requests'],
     keywords=['python', 'gis', 'qgis', 'geon', 'qwc2'],
     classifiers=[
         "Intended Audience :: Developers",

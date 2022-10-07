@@ -3,7 +3,7 @@ import os
 import requests
 import json
 from flask import json, safe_join
-from auth import get_username, get_groups
+from .auth import get_username, get_groups
 
 
 class PermissionsReader():
@@ -327,7 +327,7 @@ class PermissionsReader():
                 
         permissions = []
        
-        url = "http://localhost:3000/rpc/gn_get_permissions"
+        url = "http://qwc-postgrest-server:3000/rpc/gn_get_permissions"
         
         payload = json.dumps({
                 "resource_key": "{}".format(resource_key),
